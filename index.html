@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(148, 106, 148);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(189, 135, 189);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(250, 194, 250);
+            font-size: 1.5rem;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(255, 255, 255);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 75px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            background-color: rgb(189, 135, 189);
+            font-size: 2.5rem;
+            margin: 30px 0;
+            padding: 20px;
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background-color:rgb(114, 81, 114);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .btn a:hover {
+            font-size: 25px;
+        }
+
+        .rightSection img {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .purple {
+            color: rgb(187, 34, 179);
+        }
+
+        #element {
+            color: rgb(129, 9, 79);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.6rem;
+        }
+
+        .text-gray {
+            color: rgb(247, 228, 228);
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 60px;
+            position: relative;
+            top: 30px;
+            left: 20px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 45px;
+            width: 150px;
+            font-size: 1.5rem;
+        }
+
+        .vertical-title a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .vertical-title a:hover {
+            color:  rgb(250, 194, 250);
+            font-size: 1.9rem;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 60px;
+            color: rgb(201, 198, 198);
+            width: 150px;
+
+        }
+
+        footer {
+            background-color: rgb(85, 55, 85);
+
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 23px 122px;
+        }
+
+        .footer>div {
+            width: 150px;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: rgb(172, 170, 170);
+            padding: 12px 0;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .box {
+                flex-direction: column;
+            }
+
+            .secondSection .vertical {
+                height: unset;
+            }
+
+            .vertical-title, .vertical-desc {
+                left: 45px;
+            }
+
+            .secondSection .box {
+                width: 50vw;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            
+            .firstSection {
+                flex-direction: column-reverse;
+            }
+
+            .leftSection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .rightSection {
+                width: 721px !important;
+                display: flex;
+                justify-content: center;
+            }
+            .rightSection img{
+                width: 45%;
+                margin-bottom: 73px;
+            }
+
+            .secondSection {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 196vh;
+            }
+            body{
+                min-width: fit-content;
+            }
+            .image-top{
+                top: 88px;
+                left: -13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Radha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li> <a href="/">About</a></li>
+                    <li> <a href="/">Service</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, I my name is <span class="purple">Radha</span></div>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a
+                            href="https://drive.google.com/file/d/1yLUj3hrlPSb2jsFWKK-orF2Za-IkcG3o/view?usp=sharing"
+                            target="_blank"> Download Resume </a></button>
+                    <button class="btn"><a href="https://github.com/9312-Radha" target="_blank"> Visit Github
+                        </a></button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="software-development.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <a href="https://github.com/9312-Radha" target="_blank"> <img class="image-top" src="Github.jpg"
+                            alt=""></a>
+                    <div class="vertical-title"> <a href="https://github.com/9312-Radha" target="_blank">
+                            Github
+                        </a></div>
+                    <div class="vertical-desc">
+                        GitHub, Inc. is a platform and cloud-based
+                        service for software development and
+                        version control using Git, allowing
+                        developers to store and manage their code
+                    </div>
+                </div>
+                <div class="vertical">
+                    <a href="https://www.linkedin.com/in/radha-kumari9312" target="_blank">
+                        <img class="image-top" src="linkedin.png" alt=""></a>
+                    <div class="vertical-title"><a href="https://www.linkedin.com/in/radha-kumari9312" target="_blank">
+                            LinkedIn </a>
+                    </div>
+                    <div class="vertical-desc">
+                        LinkedIn is a business and employment-focused
+                        social media platform that works through
+                        websites and mobile apps. It was launched
+                        on May 5, 2003. It is now owned by Microsoft.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <a href="https://leetcode.com/Radha_9312/" target="_blank">
+                        <img class="image-top" src="leetcode.png" alt=""></a>
+                    <div class="vertical-title"><a href="https://leetcode.com/Radha_9312/" target="_blank">
+                            Leetcode </a>
+                    </div>
+                    <div class="vertical-desc">
+                        LeetCode is the best platform to help
+                        you enhance your skills, expand your
+                        knowledge and prepare for technical interviews.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <a href="https://www.whatsapp.com/" target="_blank">
+                        <img class="image-top" src="Whatsapp.png" alt=""></a>
+                    <div class="vertical-title"><a href="https://www.whatsapp.com/" target="_blank">
+                            Whatsapp </a>
+                    </div>
+                    <div class="vertical-desc">
+                        WhatsApp is an instant messaging and 
+                        voice-over-IP service owned by technology. 
+                        It allows users to send text, voice 
+                        messages and video messages ,make voice & video calls
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <a href="https://instagram.com/radhakushwaha0401?igshid=MzNlNGNkZWQ4Mg==" target="_blank">
+                        <img class="image-top" src="instagram.png" alt=""></a>
+                    <div class="vertical-title"><a
+                            href="https://instagram.com/radhakushwaha0401?igshid=MzNlNGNkZWQ4Mg==" target="_blank">
+                            Instagram </a>
+                    </div>
+                    <div class="vertical-desc">
+                        Instagram is a photo and video sharing
+                        social networking service owned by American
+                        company Meta Platforms. The app allows
+                        users to upload media that can be
+                        edited with filters
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Radha's Mini Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; radhasportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
